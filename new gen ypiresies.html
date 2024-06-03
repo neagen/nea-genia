@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΥΠΗΡΕΣΙΕΣ-ΝΕΑ ΓΕΝΙΑ ΦΑΝΟΒΑΦΕΙΟ</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/png"> <!-- Εδώ προστίθεται το favicon -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            width: 300px;  /* Αυξήστε το μέγεθος του λογότυπου */
+            height: auto;
+            margin: 30px 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+        .large-text {
+            font-size: 2em;
+        }
+        .service-image {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .small-service-image {
+            width: 50%;
+            height: auto;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-image:hover, .small-service-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .contact-form {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Υπηρεσίες</h1>
+    <img src="new gen1.jpg" alt="Logo της επιχείρησης">
+</header>
+
+<nav>
+    <a href="nea genia2.html">Αρχική</a>
+    <a href="https://www.car.gr/parts/?shop=1000132685&shop=10055624&uid=10055624&pg=1">Προϊόντα</a>
+    <a href="new gen silogi.html">Συλλογή</a>
+</nav>
+
+<div class="container">
+    <h2>Υπηρεσίες</h2>
+    <p><b class="large-text">Ο ΧΩΡΟΣ ΜΑΣ ΔΙΑΘΕΤΕΙ ΚΑΙ </b><span class="highlight large-text">PARKING</span>.</p>
+    <table>
+        <tr>
+            <th>Τιμοκατάλογος</th>
+        </tr>
+        <tr>
+            <td><b>5€</b> 1η ώρα</td>
+        </tr>
+        <tr>
+            <td><b>1€</b> για κάθε έξτρα ώρα</td>
+        </tr>
+        <tr>
+            <td><b>8€ </b>όλη μέρα</td>
+        </tr>
+    </table>
+    <ul>
+        <li><strong>Έχουμε έναν ευρύχωρο χώρο με 3 ΦΟΥΡΝΟΥΣ για την γρήγορη εξυπηρέτηση των πελατών μας.</strong></li>
+    </ul>
+    <img src="1.jpg" alt="Φούρνοι" class="small-service-image">
+    <ul>
+        <li><strong>Στην συνέχεια το συνεργείο μας περιλαμβάνει 3 στάσεις προεργασίας.</strong></li>
+    </ul>
+    <img src="proergasia.jpg" alt="Στάσεις προεργασίας" class="small-service-image">
+    <ul>
+        <li><strong>Τέλος, το μαγαζί μας έχει και καλύμπρα ώστε να γίνει πιο εύκολη και γρήγορη η επιδιόρθωση του αυτοκινήτου σας.</strong></li>
+    </ul>
+    <img src="kalimpra.jpg" alt="Καλύμπρα" class="small-service-image">
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h3>Κλείστε το Ραντεβού σας</h3>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Το όνομά σας" required>
+            <input type="email" name="email" placeholder="Το email σας" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <textarea name="message" placeholder="Το μήνυμά σας" required></textarea>
+            <button type="submit">Αποστολή</button>
+        </form>
+        <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
+            <div id="form-response">
+                <?php
+                // Συλλογή δεδομένων από την φόρμα
+                $name = $_POST['name'];
+                $email = $_POST['email'];
+                $date = $_POST['date'];
+                $time = $_POST['time'];
+                $message = $_POST['message'];
+
+                // Έλεγχος ότι όλα τα πεδία είναι συμπληρωμένα
+                if (!empty($name) && !empty($email) && !empty($date) && !empty($time) && !empty($message)) {
+                    // Στοιχεία αποστολής email
+                    $to = "claims@new-gen.gr"; // Εισάγετε το email σας εδώ
+                    $subject = "Νέο μήνυμα από την φόρμα επικοινωνίας";
+                    $headers = "From: " . $email;
+
+                    // Μήνυμα email
+                    $email_body = "Όνομα: $name\n";
+                    $email_body .= "Email: $email\n";
+                    $email_body .= "Ημερομηνία: $date\n";
+                    $email_body .= "Ώρα: $time\n";
+                    $email_body .= "Μήνυμα:\n$message\n";
+
+                    // Αποστολή email
+                    if (mail($to, $subject, $email_body, $headers)) {
+                        echo "Το μήνυμά σας στάλθηκε επιτυχώς.";
+                    } else {
+                        echo "Υπήρξε ένα σφάλμα κατά την αποστολή του μηνύματός σας. Παρακαλώ δοκιμάστε ξανά.";
+                    }
+                } else {
+                    echo "Παρακαλούμε συμπληρώστε όλα τα πεδία της φόρμας.";
+                }
+                ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 ΝΕΑ ΓΕΝΙΑ ΦΑΝΟΒΑΦΕΙΟ. Όλα τα δικαιώματα διατηρούνται.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-32x30.png" type="image/png">
+    <title>SK Polish & Accessories</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #800080;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+        }
+        .container {
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+        }
+        .services-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .service {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .service h3 {
+            margin-top: 0;
+        }
+        img.service-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        img.service-image:hover {
+            transform: scale(1.1);
+        }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .images-container img {
+            width: calc(50% - 10px);
+        }
+        .contact-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .social-links-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .social-links img {
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="0-02-05-9055d3dcf704e090ea80967f8d56343d73b6ad54d247af62ca8fa3923cce7c43_c85c0942ec1b92f8.jpg" alt="SK Polish & Accessories Logo" class="logo">
+        <h1>Καλώς ήρθατε στην SK Polish & Accessories</h1>
+    </header>
+    <div class="container">
+        <h2>Οι Υπηρεσίες Μας</h2>
+        <div class="services-section">
+            <div class="service">
+                <h3>Κατασκευή και εφαρμογή universal καλυμμάτων καθίσματος</h3>
+                <p>Προσφέρουμε κατασκευή και εφαρμογή καθισμάτων με universal καλύμματα, καθώς και καλύμματα με υφάσματα της αρεσκείας σας.</p>
+                <div class="images-container">
+                    <img src="0-02-05-58ea5279ed492c1d739ff3a9c3ff95ed522465a1e171a4146e0f10703334d7ce_46a38bdaa7b3fe9c.jpg" alt="Καλύμματα καθίσματος" class="service-image">
+                    <img src="0-02-05-f72f8f40413e6226c35019871d88805c04bb9807019d828e60e2f97068b25b3f_c58f69a7cdbdeb4f.jpg" alt="Καλύμματα καθίσματος" class="service-image">
+                </div>
+            </div>
+            <div class="service">
+                <h3>Πατάκια για το αυτοκίνητο</h3>
+                <p>Παρέχουμε πατάκια για το αυτοκίνητό σας, είτε universal είτε με οποιοδήποτε σχέδιο και ύφασμα μοκέτας επιλέξετε.</p>
+                <div class="images-container">
+                    <img src="0-02-05-8cb1da421110c8fd44d6d3992c73a3c9e1815f00f2f7c9317c9e58df79e417ff_6543817d50b25529.jpg" alt="Πατάκια αυτοκινήτου" class="service-image">
+                    <img src="0-02-05-db8bbfefd9ba39314fd31d96d9f95ecd3a15dfdc88f3c09289765254ebe4b0ba_dff9121585d51f3.jpg" alt="Πατάκια αυτοκινήτου" class="service-image">
+                </div>
+            </div>
+            <div class="service">
+                <h3>Κρυσταλλοποίηση φαναριών</h3>
+                <p>Προσφέρουμε κρυσταλλοποίηση φαναριών για να φαίνονται σαν καινούργια.</p>
+                <div class="images-container">
+                    <img src="0-02-05-6856d639d5c1efdf7bccc15283fe82facf4df6d9b4b3051fda21678616e47c27_ebefbf5b65ba258d.jpg" alt="Κρυσταλλοποίηση φαναριών" class="service-image">
+                    <img src="0-02-05-de289968b09bed2a886da209bbee3efb3f520fbee7d9346d2a48112251bbee0f_50ace027c9ad48d9.jpg" alt="Κρυσταλλοποίηση φαναριών" class="service-image">
+                </div>
+            </div>
+            <div class="service">
+                <h3>Γυάλισμα αυτοκινήτου</h3>
+                <p>Παρέχουμε επαγγελματικό γυάλισμα αυτοκινήτου για την απόλυτη λάμψη.</p>
+                <div class="images-container">
+                    <img src="mercedes.jpg" alt="Γυάλισμα αυτοκινήτου" class="service-image">
+                    <img src="hunda.jpg" alt="Γυάλισμα αυτοκινήτου" class="service-image">
+                    <img src="mixanaki.jpg" alt="Γυάλισμα αυτοκινήτου" class="service-image">
+                </div>
+            </div>
+            <div class="service">
+                <h3>Τάσια</h3>
+                <p>Διαθέτουμε τάσια για το αυτοκίνητό σας.</p>
+                <div class="images-container">
+                    <img src="34251.webp" alt="Τάσια" class="service-image">
+                </div>
+            </div>
+            <div class="service">
+                <h3>Βιολογικός καθαρισμός</h3>
+                <p>Προσφέρουμε βιολογικό καθαρισμό για το αυτοκίνητό σας.</p>
+                <div class="images-container">
+                    <img src="biologikos1.jpg" alt="Βιολογικός καθαρισμός" class="service-image">
+                    <img src="bilogikos2.jpg" alt="Βιολογικός καθαρισμός" class="service-image">
+                </div>
+            </div>
+            <div class="service">
+                <h3>Ανεμοθραύστες</h3>
+                <p>Διαθέτουμε ανεμοθραύστες για το αυτοκίνητό σας.</p>
+                <div class="images-container">
+                    <img src="8.jpg" alt="Ανεμοθραύστες" class="service-image">
+                </div>
+            </div>
+            <div class="service">
+                <h3>Καλλύματα τιμονιού</h3>
+                <p>Διαθέτουμε καλύμματα για το τιμόνι σας.</p>
+                <div class="images-container">
+                    <img src="timoni.jpg" alt="Καλύμματα τιμονιού" class="service-image">
+                    <img src="timoni2.jpg" alt="Καλύμματα τιμονιού" class="service-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Επικοινωνήστε Μαζί Μας</h2>
+            <p>Για να κλείσετε ραντεβού, παρακαλούμε επικοινωνήστε στο 6906649639 ή επισκεφτείτε μας στην περιοχή του Πειραιά στο Φανοβαφείο ΝΕΑ ΓΕΝΙΑ (Μεθώνης και Μαυρομιχάλη 14).</p>
+        </div>
+        
+        <div class="social-links-container">
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@sophiakoroneou?lang=el-GR" target="_blank">
+                    <img src="tiktok.png" alt="TikTok Logo"> TikTok
+                </a>
+                <a href="https://www.instagram.com/sophia.koro/?hl=el" target="_blank">
+                    <img src="Instagram_icon.png" alt="Instagram Logo"> Instagram
+                </a>
+                <a href="https://www.facebook.com/p/S-K-polishaccesories-100057538295537/?_rdr" target="_blank">
+                    <img src="facebook.png" alt="Facebook Logo"> Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 ΝΕΑ ΓΕΝΙΑ ΦΑΝΟΒΑΦΕΙΟ. Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+</body>
+</html>
