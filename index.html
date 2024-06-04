@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ΝΕΑ ΓΕΝΙΑ ΦΑΝΟΒΑΦΕΙΟ</title>
-     <link rel="icon" href="favicon-32x32.png" type="image/png"> <!-- Εδώ προστίθεται το favicon -->
+    <link rel="icon" href="favicon-32x32.png" type="image/png"> <!-- Εδώ προστίθεται το favicon -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,7 +68,7 @@
         }
 
         .main-content img {
-            width: 300px; /* Αυξήθηκε από 200px */
+            width: 300px;
             height: auto;
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -88,8 +88,8 @@
             width: 100%;
             max-width: 600px;
             border-radius: 8px;
-            border: 2px solid #333; /* Έντονο πλαίσιο */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Σκιά */
+            border: 2px solid #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .contact-info h2, .schedule h2 {
@@ -154,7 +154,7 @@
         .social-links a {
             margin: 0 10px;
             text-decoration: none;
-            color: #BLACK;
+            color: #000;
             transition: color 0.3s;
         }
 
@@ -172,6 +172,69 @@
             text-align: center;
             margin-top: auto;
         }
+
+        /* Για μικρότερες οθόνες */
+        @media (max-width: 768px) {
+            header img, .main-content img {
+                width: 100%;
+                max-width: 300px; /* Διατηρεί τις εικόνες σε λογικό μέγεθος */
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .contact-info, .schedule {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .map-container iframe {
+                height: 300px;
+            }
+
+            .social-links a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* Για πολύ μικρές οθόνες */
+        @media (max-width: 480px) {
+            header img, .main-content img {
+                width: 100%;
+                max-width: 200px; /* Ακόμα μικρότερο για πολύ μικρές οθόνες */
+            }
+
+            nav {
+                padding: 5px;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            .container {
+                padding: 5px;
+            }
+
+            .contact-info, .schedule {
+                padding: 10px;
+            }
+
+            .map-container iframe {
+                height: 200px;
+            }
+
+            .social-links img {
+                width: 20px; /* Μικρότερα εικονίδια κοινωνικών δικτύων */
+            }
+        }
     </style>
 </head>
 <body>
@@ -184,7 +247,7 @@
         <a href="https://www.car.gr/parts/?shop=1000132685&shop=10055624&uid=10055624&pg=1">Προϊόντα</a>
         <a href="new gen ypiresies.html">Υπηρεσίες</a>
         <a href="new gen sunergates.html">Συνεργάτες</a>
-		<a href="new gen silogi.html">Συλλογή</a>
+        <a href="new gen silogi.html">Συλλογή</a>
     </nav>
 
     <div class="container">
@@ -217,30 +280,13 @@
                     <li>Τετάρτη: 8:00 π.μ. – 6:00 μ.μ.</li>
                     <li>Πέμπτη: 8:00 π.μ. – 6:00 μ.μ.</li>
                     <li>Παρασκευή: 8:00 π.μ. – 6:00 μ.μ.</li>
-                    <li>Σάββατο: 8:00 π.μ. – 2:00 μ.μ.</li>
-                    <li>Κυριακή: Κλειστά</li>
+                    <li>Σάββατο: 8:00 π.μ. – 3:00 μ.μ.</li>
                 </ul>
             </div>
         </div>
         <div class="map-container">
-            <h3>Η τοποθεσία μας</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434507634!2d23.626790815867984!3d37.94223097972764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd8b90bf69a7%3A0x3fbb8b69a6b2f8c6!2sMethonis%2014%2C%20Pireas%20185%2045!5e0!3m2!1sen!2sgr!4v1685448278724!5m2!1sen!2sgr" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="social-links-container">
-            <div class="social-links">
-                <a href="https://www.tiktok.com/@_new_gen_" target="_blank">
-                    <img src="tiktok.png" alt="TikTok Logo"> TikTok
-                </a>
-                <a href="https://www.youtube.com/@newgenerationofbodypaintin4617" target="_blank">
-                    <img src="YouTube_icon_(2013-2017).png" alt="YouTube Logo"> YouTube
-                </a>
-                <a href="https://www.instagram.com/newgeneration.bodypainting/" target="_blank">
-                    <img src="Instagram_icon.png" alt="Instagram Logo"> Instagram
-                </a>
-                <a href="https://www.facebook.com/people/New-Generation-of-Body-Painting/100063839371800/" target="_blank">
-                    <img src="facebook.png" alt="Facebook Logo"> Facebook
-                </a>
-            </div>
+            <h2>Τοποθεσία</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1574.4334572157196!2d23.6276329!3d37.956317499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a35a0a9a177f%3A0x78cc7d0d7c9c21d2!2sP.%20Tsaldari%2080%2C%20Keratsini%20187%2025!5e0!3m2!1sel!2sgr!4v1684853143251!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     
