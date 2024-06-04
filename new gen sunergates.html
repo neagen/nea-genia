@@ -30,8 +30,15 @@
             width: 300px;
             margin-top: 10px;
         }
+   }
 
-        nav {
+        /* Για μικρότερες οθόνες */
+        @media (max-width: 768px) {
+            header img, .main-content img {
+                width: 100%;
+                max-width: 300px; /* Διατηρεί τις εικόνες σε λογικό μέγεθος */
+        
+                nav {
             background-color: #444;
             padding: 10px;
             text-align: center;
