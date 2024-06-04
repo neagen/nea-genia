@@ -14,7 +14,6 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            overflow-x: hidden; /* Αποφυγή οριζόντιας κύλισης */
         }
 
         header {
@@ -27,7 +26,8 @@
         }
 
         header img {
-            width: 300px;
+            width: 80%;
+            max-width: 300px;
             margin-top: 10px;
         }
 
@@ -44,6 +44,7 @@
             margin: 0 10px;
             text-decoration: none;
             transition: color 0.3s, font-weight 0.3s;
+            display: inline-block;
         }
 
         nav a:hover {
@@ -53,7 +54,8 @@
 
         .container {
             flex: 1;
-            width: 100%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
             overflow: hidden;
             padding: 20px;
@@ -69,7 +71,8 @@
         }
 
         .main-content img {
-            width: 300px; /* Αυξήθηκε από 200px */
+            width: 90%;
+            max-width: 300px;
             height: auto;
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -86,11 +89,11 @@
             background-color: #fff;
             padding: 20px;
             margin: 10px 0;
-            width: 100%;
+            width: 90%;
             max-width: 600px;
             border-radius: 8px;
-            border: 2px solid #333; /* Έντονο πλαίσιο */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Σκιά */
+            border: 2px solid #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .contact-info h2, .schedule h2 {
@@ -119,7 +122,7 @@
 
         .map-container iframe {
             width: 100%;
-            height: 400px;
+            height: 50vh;
             border: 0;
         }
 
@@ -133,7 +136,8 @@
         }
 
         .footer-logo {
-            width: 100px;
+            width: 50%;
+            max-width: 100px;
             height: auto;
             margin-bottom: 10px;
         }
@@ -155,7 +159,7 @@
         .social-links a {
             margin: 0 10px;
             text-decoration: none;
-            color: #BLACK;
+            color: #fff;
             transition: color 0.3s;
         }
 
@@ -172,6 +176,24 @@
         .social-links-container {
             text-align: center;
             margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            header img {
+                width: 70%;
+            }
+
+            .main-content img {
+                width: 80%;
+            }
+
+            .contact-info, .schedule {
+                width: 95%;
+            }
+
+            .footer-logo {
+                width: 80px;
+            }
         }
     </style>
 </head>
@@ -192,7 +214,7 @@
         <div class="main-content">
             <h2>Καλώς ήρθατε στη Νέα Γενιά Φανοβαφείο</h2>
             <p><b>
-                Η Νέα Γενιά είναι μια πρότυπη μονάδα αυτοκινήτων,παρέχει όλες τις υπηρεσίες για το αυτοκίνητό σας, όπως βαφή, επιδιόρθωση του χρώματος και άλλα. Διαθέτει καλίμπρα και όλα τα σύγχρονα μέσα επιδιόρθωσης. Επιπλέον, μπορούμε να περιποιηθούμε το αυτοκίνητό σας γυαλίζοντάς το εξωτερικά με όλα τα σύγχρονα μέσα. Τέλος, η ομάδα μας αποτελείται από ένα εξαιρετικό και έμπειρο προσωπικό.
+                Η Νέα Γενιά είναι μια πρότυπη μονάδα αυτοκινήτων, η οποία παρέχει όλες τις υπηρεσίες για το αυτοκίνητό σας, όπως βαφή, επιδιόρθωση του χρώματος και άλλα. Διαθέτει καλίμπρα και όλα τα σύγχρονα μέσα επιδιόρθωσης. Επιπλέον, μπορούμε να περιποιηθούμε το αυτοκίνητό σας γυαλίζοντάς το εξωτερικά με όλα τα σύγχρονα μέσα. Τέλος, η ομάδα μας αποτελείται από ένα εξαιρετικό και έμπειρο προσωπικό.
             </b></p>
             <div>
                 <img src="new gen8.jpg" alt="Car 1">
@@ -225,26 +247,10 @@
         </div>
         <div class="map-container">
             <h3>Η τοποθεσία μας</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434507634!2d23.626790815867984!3d37.94223097972764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd8b90bf69a7%3A0x3fbb8b69a6b2f8c6!2sMethonis%2014%2C%20Pireas%20185%2045!5e0!3m2!1sen!2sgr!4v1685448278724!5m2!1sen!2sgr" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="social-links-container">
-            <div class="social-links">
-                <a href="https://www.tiktok.com/@_new_gen_" target="_blank">
-                    <img src="tiktok.png" alt="TikTok Logo"> TikTok
-                </a>
-                <a href="https://www.youtube.com/@newgenerationofbodypaintin4617" target="_blank">
-                    <img src="YouTube_icon_(2013-2017).png" alt="YouTube Logo"> YouTube
-                </a>
-                <a href="https://www.instagram.com/newgeneration.bodypainting/" target="_blank">
-                    <img src="Instagram_icon.png" alt="Instagram Logo"> Instagram
-                </a>
-                <a href="https://www.facebook.com/people/New-Generation-of-Body-Painting/100063839371800/" target="_blank">
-                    <img src="facebook.png" alt="Facebook Logo"> Facebook
-                </a>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434507634!2d23.626790815867984!3d37.94223097972764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd8b90bf69a7%3A0x2cbd8fcb0a7f07c8!2sAcropolis%20Museum!5e0!3m2!1sen!2sus!4v1633635786955!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
-    
+
     <footer>
         <img src="new gen1.jpg" alt="Μικρό λογότυπο της επιχείρησης" class="footer-logo">
         <div class="footer-contact-info">
