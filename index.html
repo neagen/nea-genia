@@ -14,6 +14,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            overflow-x: hidden; /* Αυτό θα αποκλείσει την οριζόντια κύλιση */
         }
 
         header {
@@ -26,8 +27,10 @@
         }
 
         header img {
-            width: 300px;
+            width: 100%; /* Το μέγιστο πλάτος της εικόνας για να προσαρμόζεται */
+            max-width: 300px;
             margin-top: 10px;
+            height: auto; /* Διατήρηση της αναλογίας */
         }
 
         nav {
@@ -54,12 +57,13 @@
             flex: 1;
             width: 100%;
             margin: auto;
-            overflow: hidden;
+            overflow: hidden; /* Αποφυγή οριζόντιας κύλισης */
             padding: 20px;
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-sizing: border-box; /* Για σωστό υπολογισμό του padding */
         }
 
         .main-content {
@@ -68,8 +72,9 @@
         }
 
         .main-content img {
-            width: 300px;
-            height: auto;
+            width: 100%; /* Το μέγιστο πλάτος της εικόνας για να προσαρμόζεται */
+            max-width: 300px;
+            height: auto; /* Διατήρηση της αναλογίας */
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -90,6 +95,7 @@
             border-radius: 8px;
             border: 2px solid #333;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box; /* Για σωστό υπολογισμό του padding */
         }
 
         .contact-info h2, .schedule h2 {
@@ -118,6 +124,7 @@
 
         .map-container iframe {
             width: 100%;
+            max-width: 600px; /* Περιορισμός στο μέγιστο πλάτος */
             height: 400px;
             border: 0;
         }
@@ -285,29 +292,28 @@
             </div>
         </div>
          
-      
-  <div class="map-container">
+        <div class="map-container">
             <h3>Η τοποθεσία μας</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434507634!2d23.626790815867984!3d37.94223097972764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd8b90bf69a7%3A0x3fbb8b69a6b2f8c6!2sMethonis%2014%2C%20Pireas%20185%2045!5e0!3m2!1sen!2sgr!4v1685448278724!5m2!1sen!2sgr" allowfullscreen="" loading="lazy"></iframe>
         </div>
-
     </div>
+    
     <div class="social-links-container">
-            <div class="social-links">
-                <a href="https://www.tiktok.com/@_new_gen_" target="_blank">
-                    <img src="tiktok.png" alt="TikTok Logo"> TikTok
-                </a>
-                <a href="https://www.youtube.com/@newgenerationofbodypaintin4617" target="_blank">
-                    <img src="YouTube_icon_(2013-2017).png" alt="YouTube Logo"> YouTube
-                </a>
-                <a href="https://www.instagram.com/newgeneration.bodypainting/" target="_blank">
-                    <img src="Instagram_icon.png" alt="Instagram Logo"> Instagram
-                </a>
-                <a href="https://www.facebook.com/people/New-Generation-of-Body-Painting/100063839371800/" target="_blank">
-                    <img src="facebook.png" alt="Facebook Logo"> Facebook
-                </a>
-            </div>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@_new_gen_" target="_blank">
+                <img src="tiktok.png" alt="TikTok Logo"> TikTok
+            </a>
+            <a href="https://www.youtube.com/@newgenerationofbodypaintin4617" target="_blank">
+                <img src="YouTube_icon_(2013-2017).png" alt="YouTube Logo"> YouTube
+            </a>
+            <a href="https://www.instagram.com/newgeneration.bodypainting/" target="_blank">
+                <img src="Instagram_icon.png" alt="Instagram Logo"> Instagram
+            </a>
+            <a href="https://www.facebook.com/people/New-Generation-of-Body-Painting/100063839371800/" target="_blank">
+                <img src="facebook.png" alt="Facebook Logo"> Facebook
+            </a>
         </div>
+    </div>
     
     <footer>
         <img src="new gen1.jpg" alt="Μικρό λογότυπο της επιχείρησης" class="footer-logo">
