@@ -7,241 +7,244 @@
     <link rel="icon" href="favicon-32x32.png" type="image/png"> <!-- Εδώ προστίθεται το favicon -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow-x: hidden; /* Αυτό θα αποκλείσει την οριζόντια κύλιση */
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Αυτό θα αποκλείσει την οριζόντια κύλιση */
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        header img {
-            width: 100%; /* Το μέγιστο πλάτος της εικόνας για να προσαρμόζεται */
-            max-width: 300px;
-            margin-top: 10px;
-            height: auto; /* Διατήρηση της αναλογίας */
-        }
+header img {
+    width: 100%; /* Το μέγιστο πλάτος της εικόνας για να προσαρμόζεται */
+    max-width: 300px;
+    margin-top: 10px;
+    height: auto; /* Διατήρηση της αναλογίας */
+}
 
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s, font-weight 0.3s;
-        }
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s, font-weight 0.3s;
+}
 
-        nav a:hover {
-            color: #ffcc00;
-            font-weight: bold;
-        }
+nav a:hover {
+    color: #ffcc00;
+    font-weight: bold;
+}
 
-        .container {
-            flex: 1;
-            width: 100%;
-            margin: auto;
-            overflow: hidden; /* Αποφυγή οριζόντιας κύλισης */
-            padding: 20px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-sizing: border-box; /* Για σωστό υπολογισμό του padding */
-        }
+.container {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    overflow: hidden; /* Αποφυγή οριζόντιας κύλισης */
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Για σωστό υπολογισμό του padding */
+}
 
-        .main-content {
-            width: 100%;
-            text-align: center;
-        }
+.main-content {
+    width: 100%;
+    text-align: center;
+}
 
-        .main-content img {
-            width: 100%; /* Το μέγιστο πλάτος της εικόνας για να προσαρμόζεται */
-            max-width: 300px;
-            height: auto; /* Διατήρηση της αναλογίας */
-            margin: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+.main-content img {
+    width: 100%; /* Το μέγιστο πλάτος της εικόνας για να προσαρμόζεται */
+    max-width: 300px;
+    height: auto; /* Διατήρηση της αναλογίας */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        .contact-schedule {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
+.contact-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-        .contact-info, .schedule {
-            background-color: #fff;
-            padding: 20px;
-            margin: 10px 0;
-            width: 100%;
-            max-width: 600px;
-            border-radius: 8px;
-            border: 2px solid #333;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            box-sizing: border-box; /* Για σωστό υπολογισμό του padding */
-        }
+.contact-info, .schedule {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Για σωστό υπολογισμό του padding */
+}
 
-        .contact-info h2, .schedule h2 {
-            margin-top: 0;
-        }
+.contact-info h2, .schedule h2 {
+    margin-top: 0;
+}
 
-        .contact-info ul, .schedule ul {
-            list-style-type: none;
-            padding: 0;
-        }
+.contact-info ul, .schedule ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        .contact-info li::before, .schedule li::before {
-            content: '• ';
-            color: black;
-            font-weight: bold;
-        }
+.contact-info li::before, .schedule li::before {
+    content: '• ';
+    color: black;
+    font-weight: bold;
+}
 
-        .contact-info li, .schedule li {
-            font-weight: bold;
-        }
+.contact-info li, .schedule li {
+    font-weight: bold;
+}
 
-        .map-container {
-            width: 100%;
-            margin: 20px 0;
-        }
+.map-container {
+    width: 100vw; /* Πλήρες πλάτος του viewport */
+    margin: 0 -50vw; /* Αφαιρέστε το μισό πλάτος του viewport από το margin για πλήρη κάλυψη */
+    left: 50%; /* Μετακινήστε το αριστερά κατά το μισό πλάτος του viewport */
+    position: relative; /* Διατήρηση της θέσης */
+}
 
-        .map-container iframe {
-            width: 100%;
-            max-width: 600px; /* Περιορισμός στο μέγιστο πλάτος */
-            height: 400px;
-            border: 0;
-        }
+.map-container iframe {
+    width: 100%; /* Επέκταση στο πλήρες πλάτος του γονικού στοιχείου */
+    height: 400px;
+    border: 0;
+    margin: 0; /* Αφαίρεση τυχόν περιθωρίων */
+    padding: 0; /* Αφαίρεση τυχόν εσωτερικών περιθωρίων */
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            width: 100%;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-        }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        .footer-logo {
-            width: 100px;
-            height: auto;
-            margin-bottom: 10px;
-        }
+.footer-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
-        .footer-contact-info {
-            margin: 10px 0;
-        }
+.footer-contact-info {
+    margin: 10px 0;
+}
 
-        .footer-contact-info p {
-            margin: 5px 0;
-        }
+.footer-contact-info p {
+    margin: 5px 0;
+}
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
 
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #000;
-            transition: color 0.3s;
-        }
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
 
-        .social-links a:hover {
-            color: #ffcc00;
-        }
+.social-links a:hover {
+    color: #ffcc00;
+}
 
-        .social-links img {
-            width: 24px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
+.social-links img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 
-        .social-links-container {
-            text-align: center;
-            margin-top: 20px; /* Προσθήκη περιθωρίου για να εμφανίζονται σωστά κάτω από το χάρτη */
-        }
+.social-links-container {
+    text-align: center;
+    margin-top: 20px; /* Προσθήκη περιθωρίου για να εμφανίζονται σωστά κάτω από το χάρτη */
+}
 
-        /* Για μικρότερες οθόνες */
-        @media (max-width: 768px) {
-            header img, .main-content img {
-                width: 100%;
-                max-width: 300px; /* Διατηρεί τις εικόνες σε λογικό μέγεθος */
-            }
+/* Για μικρότερες οθόνες */
+@media (max-width: 768px) {
+    header img, .main-content img {
+        width: 100%;
+        max-width: 300px; /* Διατηρεί τις εικόνες σε λογικό μέγεθος */
+    }
 
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 
-            .container {
-                padding: 10px;
-            }
+    .container {
+        padding: 10px;
+    }
 
-            .contact-info, .schedule {
-                width: 100%;
-                padding: 15px;
-            }
+    .contact-info, .schedule {
+        width: 100%;
+        padding: 15px;
+    }
 
-            .map-container iframe {
-                height: 300px;
-            }
+    .map-container iframe {
+        height: 300px;
+    }
 
-            .social-links a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
+    .social-links a {
+        display: block;
+        margin: 10px 0;
+    }
+}
 
-        /* Για πολύ μικρές οθόνες */
-        @media (max-width: 480px) {
-            header img, .main-content img {
-                width: 100%;
-                max-width: 200px; /* Ακόμα μικρότερο για πολύ μικρές οθόνες */
-            }
+/* Για πολύ μικρές οθόνες */
+@media (max-width: 480px) {
+    header img, .main-content img {
+        width: 100%;
+        max-width: 200px; /* Ακόμα μικρότερο για πολύ μικρές οθόνες */
+    }
 
-            nav {
-                padding: 5px;
-            }
+    nav {
+        padding: 5px;
+    }
 
-            nav a {
-                margin: 5px 0;
-            }
+    nav a {
+        margin: 5px 0;
+    }
 
-            .container {
-                padding: 5px;
-            }
+    .container {
+        padding: 5px;
+    }
 
-            .contact-info, .schedule {
-                padding: 10px;
-            }
+    .contact-info, .schedule {
+        padding: 10px;
+    }
 
-            .map-container iframe {
-                height: 200px;
-            }
+    .map-container iframe {
+        height: 200px;
+    }
 
-            .social-links img {
-                width: 20px; /* Μικρότερα εικονίδια κοινωνικών δικτύων */
-            }
-        }
+    .social-links img {
+        width: 20px; /* Μικρότερα εικονίδια κοινωνικών δικτύων */
+    }
+}
     </style>
 </head>
 <body>
